@@ -1,0 +1,22 @@
+@DevForge.Api_HostAddress = http://localhost:5104
+@token = <paste token here>
+
+### Register a new account
+POST {{DevForge.Api_HostAddress}}/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "alice",
+  "email": "alice@example.com",
+  "password": "secret123",
+  "fullName": "Alice Johnson"
+}
+
+### Login
+POST {{DevForge.Api_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "usernameOrEmail": "alice",
+  "password": "secret123"
+}

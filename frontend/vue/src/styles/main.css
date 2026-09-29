@@ -1,0 +1,40 @@
+:root {
+  /* Brand palette */
+  --df-primary: #4f6df5;
+  --df-primary-dark: #3d56d6;
+  --df-bg: #0f1420;
+  --df-bg-soft: #171e2e;
+  --df-border: #24304a;
+  --df-text: #e8ecf6;
+  --df-text-muted: #93a0bd;
+  --df-success: #36c27d;
+  --df-danger: #f5536b;
+
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: var(--df-text);
+  background-color: var(--df-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  height: 100%;
+}
+
+body {
+  background-color: var(--df-bg);
+  color: var(--df-text);
+}
+
+a {
+  color: var(--df-primary);
+  text-decoration: none;
+}
